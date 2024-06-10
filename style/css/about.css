@@ -1,0 +1,68 @@
+.color1{background:#0eb1a7;background:linear-gradient(to right, #0EB1A7 7%, #64C399 100%);-webkit-background-clip:text;-webkit-text-fill-color:rgba(0,0,0,0)}#aboutUsSection .aboutDiv{width:100%}#aboutUsSection .aboutDiv .content{width:100%}#aboutUsSection .aboutDiv .content .subHeading{font-weight:400;margin-top:1rem;border-left:2px solid #0eb1a7;padding-left:.5rem}#aboutUsSection .aboutDiv .content p{font-weight:300}@media(min-width: 1024px){#aboutUsSection .aboutDiv .content p{font-size:1.25rem}}#aboutUsSection .aboutDiv .content img{margin-top:1rem;width:150px;background-color:#fff;padding:.5rem}@media(min-width: 1024px){#aboutUsSection .aboutDiv .content img{width:200px}}/*# sourceMappingURL=about.css.map */
+.sectionSpace {
+    padding: 40px 0;
+}
+
+.innerSection {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.partnersLogoWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.partnersLogoDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.partnersLogo {
+    position: relative;
+    margin: 10px;
+    /* margin-top: 50px; */
+}
+
+.partnersLogo img {
+    max-width: 100px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.partnersLogo:hover img {
+    transform: scale(1.1);
+}
+
+.partnerInfo {
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: -43px; /* Adjust the top position to place the info above the image */
+    left: 47%;
+    transform: translateX(-50%);
+    background-color: rgb(255, 255, 255);
+    background-size: contain;
+    color: rgb(245, 168, 168);
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+    z-index: 1;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    font-size: 15px;
+}
+
+.partnersLogo:hover .partnerInfo {
+    visibility: visible;
+    opacity: 1;
+}
